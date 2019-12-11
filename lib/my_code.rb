@@ -50,7 +50,7 @@ end
 def reduce_to_any_true(array)
   counter = 0
   while counter < array.size do
-      return false if array.any? == false
+      return false if array.any? == false || nil
       counter += 1
     end
     return true
