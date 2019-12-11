@@ -39,6 +39,10 @@ def reduce_to_total (array, starting_point=0)
 end
 
 def reduce_to_all_true(array)
-  if array.all? === "true"
-    return "true"
+  counter = 0
+  while counter< array.size do
+      return false if array.any? === false
+      counter += 1
+    end
+    return true
 end
