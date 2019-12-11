@@ -38,6 +38,6 @@ def reduce_to_total (array, starting_point=0)
   return sum
 end
 
-#def reduce_to_all_true(array)
-#  counter = 0
-#  while counter < array.size
+def reduce_to_all_true(array)
+  if array.all? == true
+    return true
