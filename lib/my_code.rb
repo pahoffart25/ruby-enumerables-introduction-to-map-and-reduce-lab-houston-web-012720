@@ -41,7 +41,7 @@ end
 def reduce_to_all_true(array)
   counter = 0
   while counter < array.size do
-      return false if array.nil?.! && array.value == false
+      return false if array.nil?.! && array.values_at == false
       counter += 1
     end
     return true
